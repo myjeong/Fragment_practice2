@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    //지정 색깔
+    <color name="mainPurple">#988cb1</color>  //중간 보라, 메인 컬러
+    <color name="lightPurple">#ece7ee</color>  //연보라
+    <color name="darkPurple">#584e6d</color>  //진한 보라, 바텀 바
+    <color name="slightlyDarkPurple">#584e6d</color>  //약간 진한 보라, 비밀번호 찾기
+
+</resources>
