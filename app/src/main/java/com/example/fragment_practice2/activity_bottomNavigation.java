@@ -39,8 +39,8 @@ public class activity_bottomNavigation extends AppCompatActivity {
                     case R.id.find_item:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,new fragment_find()).commit();
                         break;
-                    case R.id.write_item:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,new fragment_write()).commit();
+                    case R.id.chat_item:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,new fragment_chat()).commit();
                         break;
                     case R.id.myPage_item:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,new fragment_mypage()).commit();

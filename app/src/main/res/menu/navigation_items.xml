@@ -17,10 +17,10 @@
         />
 
     <item
-        android:id="@+id/write_item"
+        android:id="@+id/chat_item"
         android:enabled="true"
-        android:title="글쓰기"
-        android:icon="@drawable/ic_baseline_create_24"
+        android:title="채팅하기"
+        android:icon="@drawable/ic_baseline_chat_24"
         />
 
     <item
