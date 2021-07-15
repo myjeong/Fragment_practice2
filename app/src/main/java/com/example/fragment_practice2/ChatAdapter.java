@@ -48,14 +48,17 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         private TextView chatUsername;
+        private TextView chatUsermsg;
 
         //5. 넘겨받은 view를 이용하여 아이디를 찾아 설정한다.
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             chatUsername = itemView.findViewById(R.id.user_name);
+            chatUsermsg=itemView.findViewById(R.id.user_message);
         }
         public void setItem(Chat chat){
             chatUsername.setText(chat.getUsername());
+            chatUsermsg.setText(chat.getMessage());
         }
 
     }

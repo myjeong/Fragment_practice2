@@ -32,7 +32,7 @@ public class fragment_chat extends Fragment {
         //데이터를 넣는 과정->9개의 데이터 생성(add() 이용)
         List<Chat> chats=new ArrayList<>();
         for(int i = 1; i < 10; i++){
-            chats.add(new Chat(i, "user"+i, "message "+i));
+            chats.add(new Chat(i, "user"+i+"님", "message "+i));
         }
 
         //항목을 배치하기위한 LayoutManager
