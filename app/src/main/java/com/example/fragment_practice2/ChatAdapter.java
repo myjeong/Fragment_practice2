@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,8 +35,18 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         holder.setItem(chats.get(position));
+        
+        //클릭하면, 해당 아이템뷰의 위치를 나타내는 간단한 토스트메시지
+        //뷰 홀더의, 내부 아이템들(리스트뷰의 경우 리스트1, 2, 3...)을 클릭한다 느낌
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Context context=view.getContext();
+                Toast.makeText(context,position+"",Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
@@ -56,6 +67,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
             chatUsername = itemView.findViewById(R.id.user_name);
             chatUsermsg=itemView.findViewById(R.id.user_message);
         }
+
         public void setItem(Chat chat){
             chatUsername.setText(chat.getUsername());
             chatUsermsg.setText(chat.getMessage());
