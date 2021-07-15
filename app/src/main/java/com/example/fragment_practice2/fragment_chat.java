@@ -29,14 +29,19 @@ public class fragment_chat extends Fragment {
         View view=inflater.inflate(R.layout.fragment_chat, container, false);
         rvList=view.findViewById(R.id.recyclerview_chat);
 
+        //데이터를 넣는 과정->9개의 데이터 생성(add() 이용)
         List<Chat> chats=new ArrayList<>();
-
         for(int i = 1; i < 10; i++){
             chats.add(new Chat(i, "user"+i, "message "+i));
         }
+
+        //항목을 배치하기위한 LayoutManager
         LinearLayoutManager manager = new LinearLayoutManager(container.getContext(), RecyclerView.VERTICAL,false);
+        //LayoutManager 연결
         rvList.setLayoutManager(manager);
+
         chatAdapter=new ChatAdapter(chats);
+        //어댑터 연동
         rvList.setAdapter(chatAdapter);
 
         return view;

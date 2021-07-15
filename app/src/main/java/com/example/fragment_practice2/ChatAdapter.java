@@ -12,12 +12,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import java.util.Objects;
 
+//adapter: recyclerView 항목을 구성하는 필수 요소
+//ViewHolder:각 항목 구성 뷰의 재활용을 목적으로 하는 필수 요소
+//LayoutManager: 항목의 배치를 결정하는 필수 요소
+
+//3. 이후 생성된 RecyclerView.Adapter<>를 상속받는다.
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
 
     private final List<Chat> chats;
 
+    //1. ChatAdapter 클래스를 만들고 어댑터 생성자를 구축
     public ChatAdapter(List<Chat> chats){this.chats=chats;}
 
+    //4. 어댑터를 설정한 뒤 onCreateViewHolder를 콜백하여 뷰를 넘겨준다.
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = (LayoutInflater) parent.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -37,10 +44,12 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ViewHolder> {
         return chats.size();
     }
 
+    //2. ViewHolder 클래스를 RecyclerView.ViewHolder를 상속하여 생성
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         private TextView chatUsername;
 
+        //5. 넘겨받은 view를 이용하여 아이디를 찾아 설정한다.
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             chatUsername = itemView.findViewById(R.id.user_name);
