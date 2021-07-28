@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 //BottomNavigationView를 위한 import
+import com.example.fragment_practice2.chat.fragment_chat;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
