@@ -1,4 +1,4 @@
-package com.example.fragment_practice2;
+package com.example.fragment_practice2.chat;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.fragment_practice2.R;
+
 import java.util.List;
-import java.util.Objects;
 
 //adapter: recyclerView 항목을 구성하는 필수 요소
 //ViewHolder:각 항목 구성 뷰의 재활용을 목적으로 하는 필수 요소

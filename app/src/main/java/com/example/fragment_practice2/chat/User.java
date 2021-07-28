@@ -1,4 +1,4 @@
-package com.example.fragment_practice2.Model;
+package com.example.fragment_practice2.chat;
 
 public class User {
 

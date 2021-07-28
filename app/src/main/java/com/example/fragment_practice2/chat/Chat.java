@@ -1,4 +1,4 @@
-package com.example.fragment_practice2;
+package com.example.fragment_practice2.chat;
 
 public class Chat {
     private int id;

@@ -12,9 +12,12 @@ import android.view.ViewGroup;
 
 import com.example.fragment_practice2.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
-import com.example.fragment_practice2.Adapter.UserAdapter;
-import com.example.fragment_practice2.Model.User;
+import com.example.fragment_practice2.chat.UserAdapter;
+import com.example.fragment_practice2.chat.User;
 
 import java.util.ArrayList;
 import java.util.List;
