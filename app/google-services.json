@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "456564566774",
+    "firebase_url": "https://chatapp-dsc-default-rtdb.firebaseio.com",
+    "project_id": "chatapp-dsc",
+    "storage_bucket": "chatapp-dsc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456564566774:android:745f0e3e5f0f0decc71ad7",
+        "android_client_info": {
+          "package_name": "com.example.fragment_practice2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456564566774-vpsq0f53rjg0uh7jjc8pf1tt55t3f08j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtjqmbsEPnJmCbQUjHjSNtAVxvC1PnBDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456564566774-vpsq0f53rjg0uh7jjc8pf1tt55t3f08j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

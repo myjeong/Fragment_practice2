@@ -1,5 +1,83 @@
 <resources>
     <string name="app_name">Fragment_practice2</string>
     <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="we_ta">WETA</string>
+    <string name="title">WETA : WE TALENT</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wetain_detail_username">000님</string>
+    <string name="wetain_detail_personality1">긍정</string>
+    <string name="wetain_detail_personality2">친절</string>
+    <string name="wetain_detail_personality3">귀찮</string>
+    <string name="wetain_detail_talent">내 재능\n 1.피아노 2.영어\n\n원하는재능\n 1.스페인어 2.인물화\n\n원하는 위타인\n 긍정적이고 같이 성장할 수 있는 분</string>
+    <string name="wetain_detail_more">위타인 더 살펴보기</string>
+    <string name="wetain_detail_exchange">재능교환 신청하기</string>
+    <string name="settings_fail_image">이미지 불러오기 실패</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_font">글꼴</string>
+    <string name="settings_sound">소리</string>
+    <string name="settings_ext">기타</string>
+    <string name="settings_logout">로그아웃</string>
+    <string name="settings_management">회원관리</string>
+    <string name="settings_mypage">마이페이지로 돌아가기</string>
+    <string name="todo">TODO</string>
+
+    //회원가입 화면 strings
+    <string name="text_signup">회원가입</string>
+    <string name="signup_id">아이디를 입력해 주세요</string>
+    <string name="btn_ok">확인</string>
+    <string name="signup_pw">비밀번호를 입력해 주세요</string>
+    <string name="signup_repw">비밀번호를 다시 입력해 주세요</string>
+    <string name="signup_email">이메일을 입력해 주세요</string>
+    <string name="btn_verify">인증</string>
+    <string name="signup_nickname">별명을 입력해 주세요</string>
+    <string name="btn_signup">회원가입하기</string>
+    <string name="btn_backtologin">로그인 화면으로 돌아가기</string>
+
+    //회원가입 화면 다이얼로그 strings
+    <string name="dialog_signup1">회원가입이 정상적으로 되었습니다</string>
+    <string name="dialog_signup2">위타에 오신 것을 환영합니다</string>
+
+    //home 화면 strings
+    <string name="home_오늘의추천위타인_제목">오늘의 추천 위타인~!</string>
+    <string name="home_추천위타인">추천 위타인</string>
+    <string name="home_추천재능">추천 재능</string>
+    //db로 채워질 부분
+    <string name="home_오늘의추천위타인_이름과재능">ㅇㅇㅇ님 ㅇㅇㅇ재능</string>
+    <string name="home_오늘의추천위타인_설명">설명</string>
+
+    //로그인 화면 strings
+    <string name="로그인">로그인</string>
+    <string name="회원가입">회원가입</string>
+    <string name="구글로회원가입">구글로 회원가입</string>
+    <string name="네이버로회원가입">네이버로 회원가입</string>
+    <string name="아이디를입력해주세요">아이디를 입력해 주세요</string>
+    <string name="비밀번호를입력해주세요">비밀번호를 입력해 주세요</string>
+    <string name="이메일을입력해주세요">이메일을 입력해 주세요</string>
+    <string name="인증번호를입력해주세요">인증번호를 입력해 주세요</string>
+    <string name="비번아이디기억안남">아이디와 비밀번호가 기억나지 않을 땐</string>
+    <string name="여기를클릭해주세요">여기를 클릭해 주세요.</string>
+
+    //아이디 및 비밀번호 찾기 strings
+    <string name="로그인페이지로돌아가기">로그인 페이지로 돌아가기</string>
+    <string name="아이디와비밀번호찾기">아이디와 비밀번호 찾기</string>
+    <string name="아이디찾기">아이디 찾기</string>
+    <string name="비밀번호찾기">비밀번호 찾기</string>
+    <string name="인증">인증</string>
+    <string name="확인">확인</string>
+    <string name="수신다소지연">수신이 다소 지연될 수 있습니다.</string>
+    <string name="오분">인증 번호가 5분간 오지 않았다면 인증 버튼을 다시 눌러주세요.</string>
+    <string name="비밀번호잊으셨나요">비밀번호를 잊으셨나요?</string>
+    <string name="다음과같습니다">다음과 같습니다.</string>
+    <string name="님의아이디는">000@naver.com님의 아이디는</string>
+    <string name="adkfsda_naver_com">adkfsda@naver.com</string>
+    <string name="찾으려는아이디의이메일을입력">찾으려는 아이디의 이메일을 입력하세요.</string>
+    <string name="비밀번호변경하기">비밀번호 변경하기</string>
+    <string name="새로운비밀번호를입력">새로운 비밀번호를 입력해 주세요</string>
+    <string name="다시비번입력">다시 비밀번호를 입력해 주세요</string>
+    <string name="위타인모임">위타인 모임</string>
+    <string name="재능모임">재능 모임</string>
+    <string name="wetain_detail_introduce">한 마디</string>
+
 </resources>

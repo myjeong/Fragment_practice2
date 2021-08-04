@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort1">
+        <item>앨범</item>
+        <item>글</item>
+    </string-array>
+</resources>
