@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-
+//유저 클릭->채팅방 내부로 이동하기 위한 메소드
 public class MessageActivity extends AppCompatActivity {
 
     CircleImageView profile_image;
@@ -39,6 +39,7 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
+        //누군지 나타내는 툴바
         Toolbar toolbar=findViewById(R.id.toolbar_layout);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
@@ -50,13 +51,17 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
+        //user_item.xml에있는 항목
         profile_image=findViewById(R.id.profile_image);
         username=findViewById(R.id.user_name);
 
         intent=getIntent();
-        String userid=intent.getStringExtra("userid");
+        //여길 userid(강의대로) 로 해야하는지 id(realtime database 명)로 해야하는지,, 좀더 고민하기
+        String userid = intent.getStringExtra("userid");
 
         fuser= FirebaseAuth.getInstance().getCurrentUser();
+
+        //child에서 userid받아오는것에서 에러,,,,
         reference= FirebaseDatabase.getInstance().getReference("Users").child(userid);
 
         reference.addValueEventListener(new ValueEventListener() {

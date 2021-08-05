@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,7 +42,7 @@ public class fragment_chat extends Fragment {
 
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;
-    private List<User> mUsers;
+    private ArrayList<User> mUsers;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,8 +50,9 @@ public class fragment_chat extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_chat, container, false);
 
+        //리사이클러뷰 설정
         recyclerView=view.findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(true); //기존 성능 강화
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         mUsers=new ArrayList<>();
@@ -61,6 +63,7 @@ public class fragment_chat extends Fragment {
 
     }
 
+    //파이어베이스에서 user정보를 불러옴
     private void readUsers() {
 
         FirebaseUser firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
@@ -80,16 +83,21 @@ public class fragment_chat extends Fragment {
                     }
                 }
 
-                userAdapter=new UserAdapter(getContext(),mUsers);
-                recyclerView.setAdapter(userAdapter);
+                //리스트 저장 및 새로고침하여 반영
+                userAdapter.notifyDataSetChanged();
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+                Log.e("FragLike",String.valueOf(error));
+
             }
         });
+
+        userAdapter=new UserAdapter(getContext(), (ArrayList<User>) mUsers);
+        recyclerView.setAdapter(userAdapter);
 
 
     }

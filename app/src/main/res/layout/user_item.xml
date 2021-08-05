@@ -20,7 +20,7 @@
         android:layout_toEndOf="@+id/profile_image"
         android:layout_marginLeft="10dp"
         android:layout_centerVertical="true"
-        android:textSize="10dp"
+        android:textSize="17sp"
         android:text="username"
         />
 
